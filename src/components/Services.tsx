@@ -1,38 +1,38 @@
 
-import { Building, Cog, BarChart3, Lightbulb, Headphones, Settings } from "lucide-react";
+import { Building, Cog, BarChart3, Lightbulb, Headphones, Settings, Search, Database, BookOpen, FolderOpen, Tag, FileText } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 
 const Services = () => {
   const dataFoundationServices = [
     {
-      icon: Building,
-      title: "Governance",
-      description: "Establishing comprehensive data governance frameworks and policies"
-    },
-    {
-      icon: Cog,
-      title: "Strategy",
-      description: "Developing strategic roadmaps for data transformation initiatives"
-    },
-    {
-      icon: Lightbulb,
-      title: "Data Monetization",
-      description: "Turning data assets into revenue-generating opportunities"
-    },
-    {
-      icon: Settings,
-      title: "Management",
-      description: "Comprehensive data lifecycle and quality management solutions"
-    },
-    {
-      icon: Cog,
-      title: "Machine Learning",
-      description: "Advanced ML solutions for predictive analytics and automation"
+      icon: Search,
+      title: "Data Quality",
+      description: "Comprehensive data quality assessment and improvement frameworks"
     },
     {
       icon: BarChart3,
-      title: "Analytics & Insights",
-      description: "Transform data into actionable business intelligence and insights"
+      title: "Master Data Management",
+      description: "Centralized management of critical business data across systems"
+    },
+    {
+      icon: Database,
+      title: "Data Catalogue",
+      description: "Organized inventory and documentation of data assets"
+    },
+    {
+      icon: Tag,
+      title: "Data Classification",
+      description: "Systematic categorization and labeling of data for governance"
+    },
+    {
+      icon: BookOpen,
+      title: "Business Glossary",
+      description: "Standardized definitions and terminology for business data"
+    },
+    {
+      icon: FileText,
+      title: "Metadata Management",
+      description: "Complete management of data about data across the organization"
     }
   ];
 
