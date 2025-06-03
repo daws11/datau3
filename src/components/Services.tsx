@@ -1,5 +1,6 @@
 
 import { Building, Cog, BarChart3, Lightbulb, Headphones, Settings } from "lucide-react";
+import AnimatedSection from "@/components/AnimatedSection";
 
 const Services = () => {
   const dataFoundationServices = [
@@ -66,51 +67,55 @@ const Services = () => {
   return (
     <section id="services" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Product & <span className="text-[#10353B]">Services</span>
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Comprehensive solutions spanning from data foundation to advanced AI implementation
-          </p>
-        </div>
+        <AnimatedSection>
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              Product & <span className="text-[#10353B]">Services</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Comprehensive solutions spanning from data foundation to advanced AI implementation
+            </p>
+          </div>
+        </AnimatedSection>
 
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
-            Data <span className="text-[#10353B]">Foundation</span>
-          </h3>
+          <AnimatedSection delay={200}>
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+              Data <span className="text-[#10353B]">Foundation</span>
+            </h3>
+          </AnimatedSection>
           <div className="grid lg:grid-cols-3 gap-6">
             {dataFoundationServices.map((service, index) => (
-              <div 
-                key={service.title}
-                className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 group text-center"
-              >
-                <div className="w-16 h-16 bg-[#10353B] rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <service.icon className="h-8 w-8 text-white" />
+              <AnimatedSection key={service.title} delay={300 + index * 100}>
+                <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 group text-center">
+                  <div className="w-16 h-16 bg-[#10353B] rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <service.icon className="h-8 w-8 text-white" />
+                  </div>
+                  <h4 className="text-lg font-semibold text-gray-900 mb-3">{service.title}</h4>
+                  <p className="text-gray-600 text-sm">{service.description}</p>
                 </div>
-                <h4 className="text-lg font-semibold text-gray-900 mb-3">{service.title}</h4>
-                <p className="text-gray-600 text-sm">{service.description}</p>
-              </div>
+              </AnimatedSection>
             ))}
           </div>
         </div>
 
         <div>
-          <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
-            Agentic AI <span className="text-[#10353B]">Solutions</span>
-          </h3>
+          <AnimatedSection delay={200}>
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+              Agentic AI <span className="text-[#10353B]">Solutions</span>
+            </h3>
+          </AnimatedSection>
           <div className="grid lg:grid-cols-5 gap-6">
             {agenticAIServices.map((service, index) => (
-              <div 
-                key={service.title}
-                className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 group text-center"
-              >
-                <div className="w-16 h-16 bg-[#10353B] rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <service.icon className="h-8 w-8 text-white" />
+              <AnimatedSection key={service.title} delay={300 + index * 100}>
+                <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 group text-center">
+                  <div className="w-16 h-16 bg-[#10353B] rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <service.icon className="h-8 w-8 text-white" />
+                  </div>
+                  <h4 className="text-lg font-semibold text-gray-900 mb-3">{service.title}</h4>
+                  <p className="text-gray-600 text-sm">{service.description}</p>
                 </div>
-                <h4 className="text-lg font-semibold text-gray-900 mb-3">{service.title}</h4>
-                <p className="text-gray-600 text-sm">{service.description}</p>
-              </div>
+              </AnimatedSection>
             ))}
           </div>
         </div>

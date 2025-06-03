@@ -1,6 +1,7 @@
 
 import { ArrowRight, Database, Brain, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import AnimatedSection from "@/components/AnimatedSection";
 
 const Hero = () => {
   return (
@@ -8,7 +9,7 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-20 lg:py-32">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="animate-fade-in">
+            <AnimatedSection>
               <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
                 DataU3
                 <span className="text-[#10353B] block">from Data to AI-enabled & Business success</span>
@@ -25,20 +26,24 @@ const Hero = () => {
                   Learn More
                 </Button>
               </div>
-            </div>
+            </AnimatedSection>
             
             <div className="relative">
               <div className="grid grid-cols-1 gap-6">
-                <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 animate-fade-in">
-                  <Brain className="h-12 w-12 text-[#10353B] mb-4" />
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Agentic AI Solutions</h3>
-                  <p className="text-gray-600">A structured pathway to Operationalize AI across your enterprise</p>
-                </div>
-                <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-                  <Database className="h-12 w-12 text-[#10353B] mb-4" />
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Data Foundation</h3>
-                  <p className="text-gray-600">A Controlled Pipeline of Data Management & Governance to AI Production</p>
-                </div>
+                <AnimatedSection delay={200}>
+                  <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <Brain className="h-12 w-12 text-[#10353B] mb-4" />
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Agentic AI Solutions</h3>
+                    <p className="text-gray-600">A structured pathway to Operationalize AI across your enterprise</p>
+                  </div>
+                </AnimatedSection>
+                <AnimatedSection delay={400}>
+                  <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <Database className="h-12 w-12 text-[#10353B] mb-4" />
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Data Foundation</h3>
+                    <p className="text-gray-600">A Controlled Pipeline of Data Management & Governance to AI Production</p>
+                  </div>
+                </AnimatedSection>
               </div>
             </div>
           </div>
