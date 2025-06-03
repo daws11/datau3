@@ -89,9 +89,10 @@ const Footer = () => {
               ))}
             </ul>
             <div className="mt-6 space-y-2 text-gray-400 text-sm">
-              <p>hello@datau3.com</p>
+              <p>info@datau3.com</p>
               <p>+971 XX XXX XXXX</p>
-              <p>Dubai, UAE</p>
+              <p>6th Meydan Grandstand, Nad AL Sheba, Meydan, Dubai, UAE</p>
+              <p>www.datau3.com</p>
             </div>
           </div>
         </div>
