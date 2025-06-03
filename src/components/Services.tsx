@@ -36,6 +36,34 @@ const Services = () => {
     }
   ];
 
+  const dataStrategyServices = [
+    {
+      icon: Search,
+      title: "Assessment",
+      description: "Comprehensive evaluation of current data capabilities and maturity"
+    },
+    {
+      icon: Cog,
+      title: "Framework",
+      description: "Establishing robust governance frameworks and operational structures"
+    },
+    {
+      icon: BarChart3,
+      title: "Benchmarks",
+      description: "Industry-standard benchmarking and performance measurement"
+    },
+    {
+      icon: FolderOpen,
+      title: "Roadmap",
+      description: "Strategic roadmap development for data transformation initiatives"
+    },
+    {
+      icon: Building,
+      title: "Strategy Document",
+      description: "Comprehensive strategy documentation and implementation guidelines"
+    }
+  ];
+
   const agenticAIServices = [
     {
       icon: BarChart3,
@@ -84,10 +112,29 @@ const Services = () => {
               Data <span className="text-[#10353B]">Foundation</span>
             </h3>
           </AnimatedSection>
-          <div className="grid lg:grid-cols-3 gap-6">
+          <div className="grid lg:grid-cols-3 gap-6 mb-12">
             {dataFoundationServices.map((service, index) => (
               <AnimatedSection key={service.title} delay={300 + index * 100}>
                 <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 group text-center">
+                  <div className="w-16 h-16 bg-[#10353B] rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <service.icon className="h-8 w-8 text-white" />
+                  </div>
+                  <h4 className="text-lg font-semibold text-gray-900 mb-3">{service.title}</h4>
+                  <p className="text-gray-600 text-sm">{service.description}</p>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+
+          <AnimatedSection delay={200}>
+            <h4 className="text-xl font-bold text-gray-900 mb-6 text-center">
+              Data Strategy & <span className="text-[#10353B]">Governance Consulting Program</span>
+            </h4>
+          </AnimatedSection>
+          <div className="grid lg:grid-cols-5 gap-6">
+            {dataStrategyServices.map((service, index) => (
+              <AnimatedSection key={service.title} delay={300 + index * 100}>
+                <div className="bg-gradient-to-br from-[#10353B]/5 to-[#10353B]/10 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 group text-center border border-[#10353B]/20">
                   <div className="w-16 h-16 bg-[#10353B] rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     <service.icon className="h-8 w-8 text-white" />
                   </div>
