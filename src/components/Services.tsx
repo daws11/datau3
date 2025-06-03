@@ -84,16 +84,6 @@ const Services = () => {
       icon: Database,
       title: "Data Management",
       description: "End-to-end data lifecycle management and optimization"
-    },
-    {
-      icon: Brain,
-      title: "AI & Machine Learning",
-      description: "Advanced analytics and machine learning solution development"
-    },
-    {
-      icon: BarChart3,
-      title: "Analytics & Insights",
-      description: "Business intelligence and data-driven decision making solutions"
     }
   ];
 
@@ -205,126 +195,153 @@ const Services = () => {
           </div>
         </AnimatedSection>
 
-        {/* Data Management Professional Services */}
-        <div className="mb-16">
+        {/* Data Foundation */}
+        <div className="mb-20">
           <AnimatedSection delay={200}>
-            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
-              Data Management <span className="text-[#10353B]">Professional Services</span>
+            <h3 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+              Data <span className="text-[#10353B]">Foundation</span>
             </h3>
           </AnimatedSection>
-          <div className="grid lg:grid-cols-3 gap-6 mb-12">
-            {dataFoundationServices.map((service, index) => (
-              <AnimatedSection key={service.title} delay={300 + index * 100}>
-                <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 group text-center">
-                  <div className="w-16 h-16 bg-[#10353B] rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <service.icon className="h-8 w-8 text-white" />
+
+          {/* Data Management Professional Services */}
+          <div className="mb-12">
+            <AnimatedSection delay={200}>
+              <h4 className="text-xl font-bold text-gray-900 mb-8 text-center">
+                Data Management Professional Services
+              </h4>
+            </AnimatedSection>
+            <div className="grid lg:grid-cols-3 gap-6 mb-12">
+              {dataFoundationServices.map((service, index) => (
+                <AnimatedSection key={service.title} delay={300 + index * 100}>
+                  <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 group text-center">
+                    <div className="w-16 h-16 bg-[#10353B] rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <service.icon className="h-8 w-8 text-white" />
+                    </div>
+                    <h5 className="text-lg font-semibold text-gray-900 mb-3">{service.title}</h5>
+                    <p className="text-gray-600 text-sm">{service.description}</p>
                   </div>
-                  <h4 className="text-lg font-semibold text-gray-900 mb-3">{service.title}</h4>
-                  <p className="text-gray-600 text-sm">{service.description}</p>
-                </div>
-              </AnimatedSection>
-            ))}
+                </AnimatedSection>
+              ))}
+            </div>
           </div>
 
-          <AnimatedSection delay={200}>
-            <h4 className="text-xl font-bold text-gray-900 mb-6 text-center">
-              Data Strategy & <span className="text-[#10353B]">Governance Consulting Program</span>
-            </h4>
-          </AnimatedSection>
-          <div className="grid lg:grid-cols-5 gap-6 mb-12">
-            {dataStrategyServices.map((service, index) => (
-              <AnimatedSection key={service.title} delay={300 + index * 100}>
-                <div className="bg-gradient-to-br from-[#10353B]/5 to-[#10353B]/10 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 group text-center border border-[#10353B]/20">
-                  <div className="w-16 h-16 bg-[#10353B] rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <service.icon className="h-8 w-8 text-white" />
+          {/* Data Strategy & Governance Consulting Program */}
+          <div className="mb-12">
+            <AnimatedSection delay={200}>
+              <h4 className="text-xl font-bold text-gray-900 mb-8 text-center">
+                Data Strategy & Governance Consulting Program
+              </h4>
+            </AnimatedSection>
+            <div className="grid lg:grid-cols-5 gap-6 mb-12">
+              {dataStrategyServices.map((service, index) => (
+                <AnimatedSection key={service.title} delay={300 + index * 100}>
+                  <div className="bg-gradient-to-br from-[#10353B]/5 to-[#10353B]/10 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 group text-center border border-[#10353B]/20">
+                    <div className="w-16 h-16 bg-[#10353B] rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <service.icon className="h-8 w-8 text-white" />
+                    </div>
+                    <h5 className="text-lg font-semibold text-gray-900 mb-3">{service.title}</h5>
+                    <p className="text-gray-600 text-sm">{service.description}</p>
                   </div>
-                  <h4 className="text-lg font-semibold text-gray-900 mb-3">{service.title}</h4>
-                  <p className="text-gray-600 text-sm">{service.description}</p>
-                </div>
-              </AnimatedSection>
-            ))}
+                </AnimatedSection>
+              ))}
+            </div>
+          </div>
+
+          {/* Domain Consulting Services */}
+          <div className="mb-12">
+            <AnimatedSection delay={200}>
+              <h4 className="text-xl font-bold text-gray-900 mb-8 text-center">
+                Domain Consulting Services
+              </h4>
+            </AnimatedSection>
+            <div className="grid lg:grid-cols-4 gap-6 mb-12">
+              {domainConsultingServices.map((service, index) => (
+                <AnimatedSection key={service.title} delay={300 + index * 100}>
+                  <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 group text-center">
+                    <div className="w-16 h-16 bg-[#10353B] rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <service.icon className="h-8 w-8 text-white" />
+                    </div>
+                    <h5 className="text-lg font-semibold text-gray-900 mb-3">{service.title}</h5>
+                    <p className="text-gray-600 text-sm">{service.description}</p>
+                  </div>
+                </AnimatedSection>
+              ))}
+            </div>
+          </div>
+
+          {/* Data Monetization Consulting Program */}
+          <div>
+            <AnimatedSection delay={200}>
+              <h4 className="text-xl font-bold text-gray-900 mb-8 text-center">
+                Data Monetization Consulting Program
+              </h4>
+            </AnimatedSection>
+            <div className="grid lg:grid-cols-3 gap-6">
+              {dataMonetizationServices.map((service, index) => (
+                <AnimatedSection key={service.title} delay={300 + index * 100}>
+                  <div className="bg-gradient-to-br from-[#10353B]/5 to-[#10353B]/10 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 group text-center border border-[#10353B]/20">
+                    <div className="w-16 h-16 bg-[#10353B] rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <service.icon className="h-8 w-8 text-white" />
+                    </div>
+                    <h5 className="text-lg font-semibold text-gray-900 mb-3">{service.title}</h5>
+                    <p className="text-gray-600 text-sm">{service.description}</p>
+                  </div>
+                </AnimatedSection>
+              ))}
+            </div>
           </div>
         </div>
 
-        {/* Domain Consulting Services */}
-        <div className="mb-16">
-          <AnimatedSection delay={200}>
-            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
-              Domain <span className="text-[#10353B]">Consulting Services</span>
-            </h3>
-          </AnimatedSection>
-          <div className="grid lg:grid-cols-3 gap-6 mb-12">
-            {domainConsultingServices.map((service, index) => (
-              <AnimatedSection key={service.title} delay={300 + index * 100}>
-                <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 group text-center">
-                  <div className="w-16 h-16 bg-[#10353B] rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <service.icon className="h-8 w-8 text-white" />
-                  </div>
-                  <h4 className="text-lg font-semibold text-gray-900 mb-3">{service.title}</h4>
-                  <p className="text-gray-600 text-sm">{service.description}</p>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
-
-          <AnimatedSection delay={200}>
-            <h4 className="text-xl font-bold text-gray-900 mb-6 text-center">
-              Data Monetization <span className="text-[#10353B]">Consulting Program</span>
-            </h4>
-          </AnimatedSection>
-          <div className="grid lg:grid-cols-3 gap-6 mb-12">
-            {dataMonetizationServices.map((service, index) => (
-              <AnimatedSection key={service.title} delay={300 + index * 100}>
-                <div className="bg-gradient-to-br from-[#10353B]/5 to-[#10353B]/10 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 group text-center border border-[#10353B]/20">
-                  <div className="w-16 h-16 bg-[#10353B] rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <service.icon className="h-8 w-8 text-white" />
-                  </div>
-                  <h4 className="text-lg font-semibold text-gray-900 mb-3">{service.title}</h4>
-                  <p className="text-gray-600 text-sm">{service.description}</p>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
-
-          <AnimatedSection delay={200}>
-            <h4 className="text-xl font-bold text-gray-900 mb-6 text-center">
-              Machine Learning & AI <span className="text-[#10353B]">Professional Services</span>
-            </h4>
-          </AnimatedSection>
-          <div className="grid lg:grid-cols-3 gap-6">
-            {mlAIServices.map((service, index) => (
-              <AnimatedSection key={service.title} delay={300 + index * 100}>
-                <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 group text-center">
-                  <div className="w-16 h-16 bg-[#10353B] rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <service.icon className="h-8 w-8 text-white" />
-                  </div>
-                  <h4 className="text-lg font-semibold text-gray-900 mb-3">{service.title}</h4>
-                  <p className="text-gray-600 text-sm">{service.description}</p>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-
-        {/* Agentic AI Solutions */}
+        {/* AI Solutions */}
         <div>
           <AnimatedSection delay={200}>
-            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
-              Agentic AI <span className="text-[#10353B]">Solutions</span>
+            <h3 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+              AI <span className="text-[#10353B]">Solutions</span>
             </h3>
           </AnimatedSection>
-          <div className="grid lg:grid-cols-5 gap-6">
-            {agenticAIServices.map((service, index) => (
-              <AnimatedSection key={service.title} delay={300 + index * 100}>
-                <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 group text-center">
-                  <div className="w-16 h-16 bg-[#10353B] rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <service.icon className="h-8 w-8 text-white" />
+
+          {/* Machine Learning & AI Professional Services */}
+          <div className="mb-12">
+            <AnimatedSection delay={200}>
+              <h4 className="text-xl font-bold text-gray-900 mb-8 text-center">
+                Machine Learning & AI Professional Services
+              </h4>
+            </AnimatedSection>
+            <div className="grid lg:grid-cols-3 gap-6 mb-12">
+              {mlAIServices.map((service, index) => (
+                <AnimatedSection key={service.title} delay={300 + index * 100}>
+                  <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 group text-center">
+                    <div className="w-16 h-16 bg-[#10353B] rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <service.icon className="h-8 w-8 text-white" />
+                    </div>
+                    <h5 className="text-lg font-semibold text-gray-900 mb-3">{service.title}</h5>
+                    <p className="text-gray-600 text-sm">{service.description}</p>
                   </div>
-                  <h4 className="text-lg font-semibold text-gray-900 mb-3">{service.title}</h4>
-                  <p className="text-gray-600 text-sm">{service.description}</p>
-                </div>
-              </AnimatedSection>
-            ))}
+                </AnimatedSection>
+              ))}
+            </div>
+          </div>
+
+          {/* Agentic AI Solutions */}
+          <div>
+            <AnimatedSection delay={200}>
+              <h4 className="text-xl font-bold text-gray-900 mb-8 text-center">
+                Agentic AI Solutions
+              </h4>
+            </AnimatedSection>
+            <div className="grid lg:grid-cols-5 gap-6">
+              {agenticAIServices.map((service, index) => (
+                <AnimatedSection key={service.title} delay={300 + index * 100}>
+                  <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-6 hover:shadow-lg transition-all duration-300 group text-center">
+                    <div className="w-16 h-16 bg-[#10353B] rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <service.icon className="h-8 w-8 text-white" />
+                    </div>
+                    <h5 className="text-lg font-semibold text-gray-900 mb-3">{service.title}</h5>
+                    <p className="text-gray-600 text-sm">{service.description}</p>
+                  </div>
+                </AnimatedSection>
+              ))}
+            </div>
           </div>
         </div>
       </div>
