@@ -19,7 +19,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-green-900">DataU3</h1>
+            <h1 className="text-2xl font-bold text-[#10353B]">DataU3</h1>
           </div>
           
           {/* Desktop Navigation */}
@@ -29,7 +29,7 @@ const Navigation = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                  className="text-gray-700 hover:text-[#10353B] px-3 py-2 text-sm font-medium transition-colors duration-200"
                 >
                   {item.name}
                 </a>
@@ -38,7 +38,7 @@ const Navigation = () => {
           </div>
 
           <div className="hidden md:block">
-            <Button className="bg-green-600 hover:bg-green-700 text-white">
+            <Button className="bg-[#10353B] hover:bg-[#0a2a2f] text-white">
               Get Started
             </Button>
           </div>
@@ -47,7 +47,7 @@ const Navigation = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-700 hover:text-green-600 p-2"
+              className="text-gray-700 hover:text-[#10353B] p-2"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -62,13 +62,13 @@ const Navigation = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-700 hover:text-green-600 block px-3 py-2 text-base font-medium"
+                  className="text-gray-700 hover:text-[#10353B] block px-3 py-2 text-base font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
                 </a>
               ))}
-              <Button className="w-full mt-4 bg-green-600 hover:bg-green-700 text-white">
+              <Button className="w-full mt-4 bg-[#10353B] hover:bg-[#0a2a2f] text-white">
                 Get Started
               </Button>
             </div>

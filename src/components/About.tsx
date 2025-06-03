@@ -48,9 +48,9 @@ const About = () => {
               <div className="space-y-4">
                 {focusAreas.map((area, index) => (
                   <div key={area.title} className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-[#10353B] rounded-full mt-2 flex-shrink-0"></div>
                     <div>
-                      <span className="font-semibold text-yellow-500">{area.title}:</span>
+                      <span className="font-semibold text-[#10353B]">{area.title}:</span>
                       <span className="text-gray-600 ml-1">{area.description}</span>
                     </div>
                   </div>
@@ -60,14 +60,14 @@ const About = () => {
 
             <div className="text-lg text-gray-600 leading-relaxed">
               <span className="text-gray-900">From strategy to execution, </span>
-              <span className="text-yellow-500 font-semibold">we transform data into your most valuable asset</span>
+              <span className="text-[#10353B] font-semibold">we transform data into your most valuable asset</span>
             </div>
           </div>
 
           <div className="grid grid-cols-2 gap-6">
             {stats.map((stat) => (
-              <div key={stat.label} className="text-center bg-gradient-to-br from-green-50 to-emerald-50 p-6 rounded-xl">
-                <div className="text-3xl font-bold text-green-600 mb-2">{stat.number}</div>
+              <div key={stat.label} className="text-center bg-gradient-to-br from-gray-50 to-gray-100 p-6 rounded-xl">
+                <div className="text-3xl font-bold text-[#10353B] mb-2">{stat.number}</div>
                 <div className="text-gray-600 text-sm">{stat.label}</div>
               </div>
             ))}

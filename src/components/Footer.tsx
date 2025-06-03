@@ -39,13 +39,13 @@ const Footer = () => {
               with 15+ years of experience in data and AI solutions.
             </p>
             <div className="flex space-x-4">
-              <div className="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-[#10353B] rounded-lg flex items-center justify-center">
                 <Database className="h-5 w-5" />
               </div>
-              <div className="w-10 h-10 bg-emerald-600 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-[#10353B] rounded-lg flex items-center justify-center">
                 <Brain className="h-5 w-5" />
               </div>
-              <div className="w-10 h-10 bg-green-700 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-[#10353B] rounded-lg flex items-center justify-center">
                 <BarChart3 className="h-5 w-5" />
               </div>
             </div>

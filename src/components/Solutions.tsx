@@ -36,11 +36,11 @@ const Solutions = () => {
   ];
 
   return (
-    <section id="solutions" className="py-20 bg-gradient-to-br from-green-50 to-emerald-50">
+    <section id="solutions" className="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Industry <span className="text-yellow-500">Experience</span>
+            Industry <span className="text-[#10353B]">Experience</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Delivering specialized solutions across diverse industries with deep domain expertise
@@ -53,7 +53,7 @@ const Solutions = () => {
               key={industry.title}
               className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center"
             >
-              <div className="w-20 h-20 bg-gradient-to-br from-green-600 to-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <div className="w-20 h-20 bg-[#10353B] rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <industry.icon className="h-10 w-10 text-white" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">{industry.title}</h3>
