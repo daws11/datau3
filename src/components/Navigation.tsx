@@ -1,4 +1,5 @@
 
+
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -35,7 +36,7 @@ const Navigation = () => {
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
               <img 
-                src="/lovable-uploads/c60baee5-c9a1-4e5e-87a9-7b57e97eaca7.png" 
+                src="/lovable-uploads/66767321-c5d7-43bc-9f1a-cc1edd2be2c4.png" 
                 alt="DataU3" 
                 className="h-8 w-auto"
               />
@@ -122,3 +123,4 @@ const Navigation = () => {
 };
 
 export default Navigation;
+
