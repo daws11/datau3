@@ -1,23 +1,23 @@
 
-import { Database, Brain, BarChart3, Shield } from "lucide-react";
+import { Database, Brain, BarChart3, Shield, Cloud, Cog } from "lucide-react";
 
 const Footer = () => {
   const services = [
-    "Strategic Consulting",
-    "Data Architecture",
-    "AI Implementation",
-    "Cloud Migration",
+    "Data Strategy & Consulting",
+    "Data Engineering",
     "Analytics & BI",
+    "Cloud Data Solutions",
+    "AI & Machine Learning",
     "Data Governance"
   ];
 
   const solutions = [
-    "Data Foundation",
-    "Machine Learning",
-    "Real-time Analytics",
-    "Predictive Modeling",
-    "Process Automation",
-    "Business Intelligence"
+    "Modern Data Platform",
+    "AI/ML Platform",
+    "Advanced Analytics",
+    "Cloud Migration",
+    "Real-time Streaming",
+    "Data Integration Hub"
   ];
 
   return (
@@ -27,21 +27,21 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <h3 className="text-2xl font-bold mb-4">DataU3</h3>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Empowering organizations to unlock the full potential of their data through expert consulting 
-              and innovative AI solutions.
+              Empowering organizations to unlock the full potential of their data through strategic consulting, 
+              modern technology platforms, and innovative AI solutions.
             </p>
             <div className="flex space-x-4">
-              <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center">
                 <Database className="h-5 w-5" />
               </div>
-              <div className="w-10 h-10 bg-indigo-600 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-emerald-600 rounded-lg flex items-center justify-center">
                 <Brain className="h-5 w-5" />
               </div>
-              <div className="w-10 h-10 bg-emerald-600 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-green-700 rounded-lg flex items-center justify-center">
                 <BarChart3 className="h-5 w-5" />
               </div>
-              <div className="w-10 h-10 bg-purple-600 rounded-lg flex items-center justify-center">
-                <Shield className="h-5 w-5" />
+              <div className="w-10 h-10 bg-emerald-700 rounded-lg flex items-center justify-center">
+                <Cloud className="h-5 w-5" />
               </div>
             </div>
           </div>
@@ -83,7 +83,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 DataU3. All rights reserved. Built with precision and innovation.</p>
+          <p>&copy; 2024 DataU3. All rights reserved. Transforming businesses through data and AI.</p>
         </div>
       </div>
     </footer>

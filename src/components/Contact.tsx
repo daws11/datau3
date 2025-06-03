@@ -6,14 +6,14 @@ import { Textarea } from "@/components/ui/textarea";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+    <section id="contact" className="py-20 bg-gradient-to-br from-gray-50 to-green-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             Ready to Transform Your Data?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Let's discuss how we can help you unlock the full potential of your data and drive business growth
+            Let's discuss how we can help you unlock the full potential of your data and accelerate your digital transformation
           </p>
         </div>
 
@@ -27,7 +27,7 @@ const Contact = () => {
 
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
+                <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center">
                   <Mail className="h-6 w-6 text-white" />
                 </div>
                 <div>
@@ -37,7 +37,7 @@ const Contact = () => {
               </div>
 
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
+                <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center">
                   <Phone className="h-6 w-6 text-white" />
                 </div>
                 <div>
@@ -47,7 +47,7 @@ const Contact = () => {
               </div>
 
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
+                <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center">
                   <MapPin className="h-6 w-6 text-white" />
                 </div>
                 <div>
@@ -89,7 +89,7 @@ const Contact = () => {
                 />
               </div>
 
-              <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white group">
+              <Button className="w-full bg-green-600 hover:bg-green-700 text-white group">
                 Send Message
                 <Send className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>

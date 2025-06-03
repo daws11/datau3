@@ -3,9 +3,9 @@ import { Award, Users, Globe, Lightbulb } from "lucide-react";
 
 const About = () => {
   const stats = [
-    { number: "50+", label: "Successful Projects" },
-    { number: "15+", label: "Years Experience" },
-    { number: "100%", label: "Client Satisfaction" },
+    { number: "100+", label: "Successful Projects" },
+    { number: "20+", label: "Years Experience" },
+    { number: "50+", label: "Enterprise Clients" },
     { number: "24/7", label: "Support Available" }
   ];
 
@@ -13,22 +13,22 @@ const About = () => {
     {
       icon: Award,
       title: "Excellence",
-      description: "We deliver exceptional results through rigorous methodology and attention to detail."
+      description: "We deliver exceptional results through proven methodologies and deep technical expertise."
     },
     {
       icon: Users,
       title: "Partnership",
-      description: "We work closely with our clients as trusted partners in their data journey."
+      description: "We work as an extension of your team, ensuring knowledge transfer and long-term success."
     },
     {
       icon: Globe,
       title: "Innovation",
-      description: "We leverage cutting-edge technologies to solve complex business challenges."
+      description: "We leverage cutting-edge technologies and industry best practices to solve complex challenges."
     },
     {
       icon: Lightbulb,
-      title: "Insight",
-      description: "We transform data into actionable insights that drive business value."
+      title: "Value",
+      description: "We focus on delivering measurable business value and ROI through data-driven solutions."
     }
   ];
 
@@ -41,18 +41,18 @@ const About = () => {
               About DataU3
             </h2>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              We are a leading data consulting firm specializing in helping organizations unlock the full potential 
-              of their data through strategic consulting, robust data foundations, and innovative AI solutions.
+              DataU3 is a leading data and AI consulting firm that helps organizations transform their business 
+              through strategic data initiatives, modern technology platforms, and innovative AI solutions.
             </p>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Our team of experts combines deep technical expertise with business acumen to deliver solutions 
-              that drive measurable results and sustainable growth.
+              Our team combines deep technical expertise with business acumen to deliver solutions that drive 
+              measurable results, accelerate digital transformation, and create sustainable competitive advantages.
             </p>
             
             <div className="grid grid-cols-2 gap-6">
               {stats.map((stat) => (
                 <div key={stat.label} className="text-center">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">{stat.number}</div>
+                  <div className="text-3xl font-bold text-green-600 mb-2">{stat.number}</div>
                   <div className="text-gray-600 text-sm">{stat.label}</div>
                 </div>
               ))}
@@ -63,9 +63,9 @@ const About = () => {
             {values.map((value, index) => (
               <div 
                 key={value.title}
-                className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl text-center hover:shadow-lg transition-shadow duration-300"
+                className="bg-gradient-to-br from-green-50 to-emerald-50 p-6 rounded-xl text-center hover:shadow-lg transition-shadow duration-300"
               >
-                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <value.icon className="h-6 w-6 text-white" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">{value.title}</h3>
