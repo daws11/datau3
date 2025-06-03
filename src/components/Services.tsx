@@ -209,7 +209,7 @@ const Services = () => {
         <div className="mb-16">
           <AnimatedSection delay={200}>
             <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
-              Data Management <span className="text-[#FFC107]">Professional Services</span>
+              Data Management <span className="text-[#10353B]">Professional Services</span>
             </h3>
           </AnimatedSection>
           <div className="grid lg:grid-cols-3 gap-6 mb-12">
@@ -228,7 +228,7 @@ const Services = () => {
 
           <AnimatedSection delay={200}>
             <h4 className="text-xl font-bold text-gray-900 mb-6 text-center">
-              Data Strategy & <span className="text-[#FFC107]">Governance Consulting Program</span>
+              Data Strategy & <span className="text-[#10353B]">Governance Consulting Program</span>
             </h4>
           </AnimatedSection>
           <div className="grid lg:grid-cols-5 gap-6 mb-12">
@@ -250,7 +250,7 @@ const Services = () => {
         <div className="mb-16">
           <AnimatedSection delay={200}>
             <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
-              Domain <span className="text-[#FFC107]">Consulting Services</span>
+              Domain <span className="text-[#10353B]">Consulting Services</span>
             </h3>
           </AnimatedSection>
           <div className="grid lg:grid-cols-3 gap-6 mb-12">
@@ -269,7 +269,7 @@ const Services = () => {
 
           <AnimatedSection delay={200}>
             <h4 className="text-xl font-bold text-gray-900 mb-6 text-center">
-              Data Monetization <span className="text-[#FFC107]">Consulting Program</span>
+              Data Monetization <span className="text-[#10353B]">Consulting Program</span>
             </h4>
           </AnimatedSection>
           <div className="grid lg:grid-cols-3 gap-6 mb-12">
@@ -288,7 +288,7 @@ const Services = () => {
 
           <AnimatedSection delay={200}>
             <h4 className="text-xl font-bold text-gray-900 mb-6 text-center">
-              Machine Learning & AI <span className="text-[#FFC107]">Professional Services</span>
+              Machine Learning & AI <span className="text-[#10353B]">Professional Services</span>
             </h4>
           </AnimatedSection>
           <div className="grid lg:grid-cols-3 gap-6">
