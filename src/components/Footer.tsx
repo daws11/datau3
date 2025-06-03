@@ -2,22 +2,30 @@
 import { Database, Brain, BarChart3, Shield, Cloud, Cog } from "lucide-react";
 
 const Footer = () => {
-  const services = [
-    "Data Strategy & Consulting",
-    "Data Engineering",
-    "Analytics & BI",
-    "Cloud Data Solutions",
-    "AI & Machine Learning",
-    "Data Governance"
+  const dataFoundationServices = [
+    "Governance",
+    "Strategy", 
+    "Data Monetization",
+    "Management",
+    "Machine Learning",
+    "Analytics & Insights"
   ];
 
-  const solutions = [
-    "Modern Data Platform",
-    "AI/ML Platform",
-    "Advanced Analytics",
-    "Cloud Migration",
-    "Real-time Streaming",
-    "Data Integration Hub"
+  const agenticAIServices = [
+    "Accounting & Taxation",
+    "Governance & Management",
+    "Sales Support",
+    "Client Support",
+    "Custom Agent"
+  ];
+
+  const industries = [
+    "Public Sector",
+    "Retail",
+    "Financial Services",
+    "Aviation",
+    "Automotive",
+    "Insurance"
   ];
 
   return (
@@ -27,8 +35,8 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <h3 className="text-2xl font-bold mb-4">DataU3</h3>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Empowering organizations to unlock the full potential of their data through strategic consulting, 
-              modern technology platforms, and innovative AI solutions.
+              From Data to AI-enabled & Business success. Transforming enterprises across MEA & GCC 
+              with 15+ years of experience in data and AI solutions.
             </p>
             <div className="flex space-x-4">
               <div className="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center">
@@ -40,16 +48,13 @@ const Footer = () => {
               <div className="w-10 h-10 bg-green-700 rounded-lg flex items-center justify-center">
                 <BarChart3 className="h-5 w-5" />
               </div>
-              <div className="w-10 h-10 bg-emerald-700 rounded-lg flex items-center justify-center">
-                <Cloud className="h-5 w-5" />
-              </div>
             </div>
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4">Services</h4>
+            <h4 className="text-lg font-semibold mb-4">Data Foundation</h4>
             <ul className="space-y-2">
-              {services.map((service) => (
+              {dataFoundationServices.map((service) => (
                 <li key={service}>
                   <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
                     {service}
@@ -60,12 +65,12 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4">Solutions</h4>
+            <h4 className="text-lg font-semibold mb-4">Agentic AI Solutions</h4>
             <ul className="space-y-2">
-              {solutions.map((solution) => (
-                <li key={solution}>
+              {agenticAIServices.map((service) => (
+                <li key={service}>
                   <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
-                    {solution}
+                    {service}
                   </a>
                 </li>
               ))}
@@ -73,17 +78,26 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
-            <div className="space-y-3 text-gray-400">
+            <h4 className="text-lg font-semibold mb-4">Industries</h4>
+            <ul className="space-y-2">
+              {industries.map((industry) => (
+                <li key={industry}>
+                  <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
+                    {industry}
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <div className="mt-6 space-y-2 text-gray-400 text-sm">
               <p>hello@datau3.com</p>
-              <p>+1 (555) 123-4567</p>
-              <p>San Francisco, CA</p>
+              <p>+971 XX XXX XXXX</p>
+              <p>Dubai, UAE</p>
             </div>
           </div>
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 DataU3. All rights reserved. Transforming businesses through data and AI.</p>
+          <p>&copy; 2024 DataU3. All rights reserved. From Data to AI-enabled & Business success.</p>
         </div>
       </div>
     </footer>

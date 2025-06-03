@@ -1,75 +1,74 @@
 
-import { Award, Users, Globe, Lightbulb } from "lucide-react";
-
 const About = () => {
   const stats = [
+    { number: "15+", label: "Years Experience" },
     { number: "100+", label: "Successful Projects" },
-    { number: "20+", label: "Years Experience" },
-    { number: "50+", label: "Enterprise Clients" },
+    { number: "MEA/GCC", label: "Regional Focus" },
     { number: "24/7", label: "Support Available" }
   ];
 
-  const values = [
+  const focusAreas = [
     {
-      icon: Award,
-      title: "Excellence",
-      description: "We deliver exceptional results through proven methodologies and deep technical expertise."
+      title: "Scalable Data Foundations",
+      description: "Building governed data pipelines, warehouses, and lakes optimized for AI readiness.",
+      highlight: true
     },
     {
-      icon: Users,
-      title: "Partnership",
-      description: "We work as an extension of your team, ensuring knowledge transfer and long-term success."
+      title: "Production AI Systems",
+      description: "Deploying machine learning models, agentic workflows, and LLM integrations that drive ROI.",
+      highlight: true
     },
     {
-      icon: Globe,
-      title: "Innovation",
-      description: "We leverage cutting-edge technologies and industry best practices to solve complex challenges."
-    },
-    {
-      icon: Lightbulb,
-      title: "Value",
-      description: "We focus on delivering measurable business value and ROI through data-driven solutions."
+      title: "Regional Expertise",
+      description: "Tailoring solutions to MEA/GCC regulatory and infrastructure landscapes.",
+      highlight: true
     }
   ];
 
   return (
     <section id="about" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+            About us
+          </h2>
+        </div>
+
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-              About DataU3
-            </h2>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              DataU3 is a leading data and AI consulting firm that helps organizations transform their business 
-              through strategic data initiatives, modern technology platforms, and innovative AI solutions.
-            </p>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Our team combines deep technical expertise with business acumen to deliver solutions that drive 
-              measurable results, accelerate digital transformation, and create sustainable competitive advantages.
+              With 15+ years of hands-on experience in delivering enterprise grade data products and AI 
+              solutions across the Middle East and GCC, we've helped enterprises across MEA & GCC 
+              transform from Data Management & Governance to AI-driven – deploying production-ready 
+              solutions that deliver measurable impact.
             </p>
             
-            <div className="grid grid-cols-2 gap-6">
-              {stats.map((stat) => (
-                <div key={stat.label} className="text-center">
-                  <div className="text-3xl font-bold text-green-600 mb-2">{stat.number}</div>
-                  <div className="text-gray-600 text-sm">{stat.label}</div>
-                </div>
-              ))}
+            <div className="mb-8">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Our work focuses on:</h3>
+              <div className="space-y-4">
+                {focusAreas.map((area, index) => (
+                  <div key={area.title} className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <span className="font-semibold text-yellow-500">{area.title}:</span>
+                      <span className="text-gray-600 ml-1">{area.description}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="text-lg text-gray-600 leading-relaxed">
+              <span className="text-gray-900">From strategy to execution, </span>
+              <span className="text-yellow-500 font-semibold">we transform data into your most valuable asset</span>
             </div>
           </div>
 
           <div className="grid grid-cols-2 gap-6">
-            {values.map((value, index) => (
-              <div 
-                key={value.title}
-                className="bg-gradient-to-br from-green-50 to-emerald-50 p-6 rounded-xl text-center hover:shadow-lg transition-shadow duration-300"
-              >
-                <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <value.icon className="h-6 w-6 text-white" />
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">{value.title}</h3>
-                <p className="text-gray-600 text-sm">{value.description}</p>
+            {stats.map((stat) => (
+              <div key={stat.label} className="text-center bg-gradient-to-br from-green-50 to-emerald-50 p-6 rounded-xl">
+                <div className="text-3xl font-bold text-green-600 mb-2">{stat.number}</div>
+                <div className="text-gray-600 text-sm">{stat.label}</div>
               </div>
             ))}
           </div>
