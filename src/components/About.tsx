@@ -1,3 +1,4 @@
+
 const About = () => {
   const stats = [
     { number: "15+", label: "Years Experience" },
@@ -25,82 +26,8 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-white relative overflow-hidden">
-      {/* Abstract Background Graphics */}
-      <div className="absolute inset-0 pointer-events-none">
-        {/* Data pipeline visualization */}
-        <svg className="absolute top-16 right-8 w-56 h-56 opacity-5" viewBox="0 0 200 200">
-          <rect x="20" y="40" width="30" height="20" rx="5" fill="#10353B" />
-          <rect x="70" y="30" width="30" height="20" rx="5" fill="#10353B" />
-          <rect x="70" y="60" width="30" height="20" rx="5" fill="#10353B" />
-          <rect x="120" y="45" width="30" height="20" rx="5" fill="#10353B" />
-          <rect x="170" y="40" width="20" height="30" rx="5" fill="#10353B" />
-          
-          <path d="M50,50 L70,40 M50,50 L70,70 M100,40 L120,55 M100,70 L120,55 M150,55 L170,55" 
-                stroke="#10353B" strokeWidth="2" fill="none" markerEnd="url(#arrowhead)" />
-          
-          <defs>
-            <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-              <polygon points="0 0, 10 3.5, 0 7" fill="#10353B" />
-            </marker>
-          </defs>
-        </svg>
-        
-        {/* ML model layers */}
-        <div className="absolute bottom-32 left-12 opacity-8">
-          <div className="space-y-3">
-            <div className="flex space-x-2">
-              <div className="w-3 h-3 bg-[#10353B] rounded-full"></div>
-              <div className="w-3 h-3 bg-[#10353B] rounded-full"></div>
-              <div className="w-3 h-3 bg-[#10353B] rounded-full"></div>
-              <div className="w-3 h-3 bg-[#10353B] rounded-full"></div>
-            </div>
-            <div className="flex space-x-2 pl-4">
-              <div className="w-3 h-3 bg-[#10353B] rounded-full"></div>
-              <div className="w-3 h-3 bg-[#10353B] rounded-full"></div>
-              <div className="w-3 h-3 bg-[#10353B] rounded-full"></div>
-            </div>
-            <div className="flex space-x-2 pl-8">
-              <div className="w-3 h-3 bg-[#10353B] rounded-full"></div>
-              <div className="w-3 h-3 bg-[#10353B] rounded-full"></div>
-            </div>
-            <div className="flex space-x-2 pl-12">
-              <div className="w-3 h-3 bg-[#10353B] rounded-full"></div>
-            </div>
-          </div>
-        </div>
-        
-        {/* Data clusters */}
-        <div className="absolute top-1/3 left-16 opacity-12">
-          <div className="relative w-20 h-20">
-            <div className="absolute top-0 left-8 w-2 h-2 bg-[#10353B] rounded-full"></div>
-            <div className="absolute top-4 left-12 w-1.5 h-1.5 bg-[#10353B] rounded-full"></div>
-            <div className="absolute top-8 left-4 w-2 h-2 bg-[#10353B] rounded-full"></div>
-            <div className="absolute top-12 left-14 w-1.5 h-1.5 bg-[#10353B] rounded-full"></div>
-            <div className="absolute top-16 left-6 w-2 h-2 bg-[#10353B] rounded-full"></div>
-            <div className="absolute top-2 left-2 w-1.5 h-1.5 bg-[#10353B] rounded-full"></div>
-            <div className="absolute top-6 left-16 w-1.5 h-1.5 bg-[#10353B] rounded-full"></div>
-            <div className="absolute top-14 left-10 w-2 h-2 bg-[#10353B] rounded-full"></div>
-          </div>
-        </div>
-        
-        {/* Analytics wave pattern */}
-        <svg className="absolute bottom-16 right-20 w-40 h-24 opacity-10" viewBox="0 0 120 60">
-          <path d="M0,30 Q15,10 30,30 T60,30 T90,30 T120,30" stroke="#10353B" strokeWidth="2" fill="none" />
-          <path d="M0,35 Q15,20 30,35 T60,35 T90,35 T120,35" stroke="#10353B" strokeWidth="1.5" fill="none" opacity="0.7" />
-          <path d="M0,40 Q15,25 30,40 T60,40 T90,40 T120,40" stroke="#10353B" strokeWidth="1" fill="none" opacity="0.5" />
-        </svg>
-        
-        {/* Binary data pattern */}
-        <div className="absolute top-20 left-1/3 opacity-8 text-[#10353B] text-xs font-mono">
-          <div>01001001</div>
-          <div>11010100</div>
-          <div>00110101</div>
-          <div>10101010</div>
-        </div>
-      </div>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section id="about" className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
             About us

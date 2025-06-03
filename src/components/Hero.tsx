@@ -1,56 +1,11 @@
+
 import { ArrowRight, Database, Brain, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section id="home" className="pt-16 bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden">
-      {/* Abstract Background Graphics */}
-      <div className="absolute inset-0 pointer-events-none">
-        {/* Floating Data Nodes */}
-        <div className="absolute top-20 left-10 w-4 h-4 bg-[#10353B] rounded-full opacity-20 animate-pulse"></div>
-        <div className="absolute top-40 left-32 w-2 h-2 bg-[#10353B] rounded-full opacity-30"></div>
-        <div className="absolute top-60 left-16 w-3 h-3 bg-[#10353B] rounded-full opacity-25 animate-pulse" style={{ animationDelay: '1s' }}></div>
-        
-        {/* Connecting Lines */}
-        <svg className="absolute top-16 left-8 w-40 h-40 opacity-10" viewBox="0 0 100 100">
-          <path d="M10,20 Q30,10 50,20 T90,20" stroke="#10353B" strokeWidth="1" fill="none" />
-          <path d="M20,40 Q40,30 60,40 T100,40" stroke="#10353B" strokeWidth="1" fill="none" />
-          <circle cx="20" cy="20" r="2" fill="#10353B" />
-          <circle cx="50" cy="20" r="2" fill="#10353B" />
-          <circle cx="80" cy="20" r="2" fill="#10353B" />
-        </svg>
-        
-        {/* Right side graphics */}
-        <div className="absolute top-32 right-20 w-6 h-6 border-2 border-[#10353B] opacity-20 rotate-45"></div>
-        <div className="absolute top-52 right-40 w-4 h-4 border border-[#10353B] opacity-30 rotate-12"></div>
-        <div className="absolute bottom-40 right-16 w-8 h-8 border-2 border-[#10353B] opacity-15 rounded-full"></div>
-        
-        {/* Data visualization bars */}
-        <div className="absolute bottom-20 left-1/4 flex space-x-1 opacity-10">
-          <div className="w-2 h-8 bg-[#10353B]"></div>
-          <div className="w-2 h-12 bg-[#10353B]"></div>
-          <div className="w-2 h-6 bg-[#10353B]"></div>
-          <div className="w-2 h-16 bg-[#10353B]"></div>
-          <div className="w-2 h-10 bg-[#10353B]"></div>
-        </div>
-        
-        {/* Neural network pattern */}
-        <svg className="absolute bottom-32 right-1/4 w-32 h-32 opacity-8" viewBox="0 0 100 100">
-          <circle cx="20" cy="20" r="3" fill="#10353B" opacity="0.3" />
-          <circle cx="50" cy="15" r="3" fill="#10353B" opacity="0.3" />
-          <circle cx="80" cy="25" r="3" fill="#10353B" opacity="0.3" />
-          <circle cx="35" cy="50" r="3" fill="#10353B" opacity="0.3" />
-          <circle cx="65" cy="55" r="3" fill="#10353B" opacity="0.3" />
-          <circle cx="50" cy="80" r="3" fill="#10353B" opacity="0.3" />
-          <line x1="20" y1="20" x2="35" y2="50" stroke="#10353B" strokeWidth="1" opacity="0.2" />
-          <line x1="50" y1="15" x2="65" y2="55" stroke="#10353B" strokeWidth="1" opacity="0.2" />
-          <line x1="80" y1="25" x2="65" y2="55" stroke="#10353B" strokeWidth="1" opacity="0.2" />
-          <line x1="35" y1="50" x2="50" y2="80" stroke="#10353B" strokeWidth="1" opacity="0.2" />
-          <line x1="65" y1="55" x2="50" y2="80" stroke="#10353B" strokeWidth="1" opacity="0.2" />
-        </svg>
-      </div>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section id="home" className="pt-16 bg-gradient-to-br from-gray-50 via-white to-gray-100">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-20 lg:py-32">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
