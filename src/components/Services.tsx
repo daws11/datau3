@@ -1,11 +1,10 @@
-
-import { Building, Cog, BarChart3, Lightbulb, Headphones, Settings, Search, Database, BookOpen, FolderOpen, Tag, FileText, TrendingUp, Users, Target, Zap, Monitor, CheckCircle, PieChart, Network, Brain, Code } from "lucide-react";
+import { Building, Cog, BarChart3, Lightbulb, Headphones, Settings, Search, Database, BookOpen, FolderOpen, Tag, FileText, TrendingUp, Users, Target, Zap, Monitor, CheckCircle, PieChart, Network, Brain, Code, Focus, PaperMoney } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 
 const Services = () => {
   const dataFoundationServices = [
     {
-      icon: CheckCircle,
+      icon: Focus,
       title: "Data Quality",
       description: "Comprehensive data quality assessment and improvement frameworks"
     },
@@ -38,7 +37,7 @@ const Services = () => {
 
   const domainConsultingServices = [
     {
-      icon: Building,
+      icon: Check,
       title: "Data Governance",
       description: "Establishing comprehensive data governance frameworks and policies"
     },
@@ -48,7 +47,7 @@ const Services = () => {
       description: "Strategic planning and roadmap development for data initiatives"
     },
     {
-      icon: PieChart,
+      icon: PaperMoney,
       title: "Data Monetization",
       description: "Unlocking business value and revenue opportunities from data assets"
     },
