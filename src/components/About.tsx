@@ -6,7 +6,7 @@ const About = () => {
     { number: "15+", label: "Years Experience" },
     { number: "100+", label: "Successful Projects" },
     { number: "MEA/GCC", label: "Regional Focus" },
-    { number: "24/7", label: "Support Available" }
+    { number: "End-to-End", label: "Solutions Delivery" }
   ];
 
   const focusAreas = [
@@ -33,8 +33,11 @@ const About = () => {
         <AnimatedSection>
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-              About us
+              Professional Services with <span className="text-[#10353B]">Consulting Approach</span>
             </h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+              Delivering comprehensive AI solutions and applications through strategic consulting
+            </p>
           </div>
         </AnimatedSection>
 
