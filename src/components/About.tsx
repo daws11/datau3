@@ -33,10 +33,10 @@ const About = () => {
         <AnimatedSection>
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-              Professional Services with <span className="text-[#10353B]">Consulting Approach</span>
+              About us
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              Delivering comprehensive AI solutions and applications through strategic consulting
+              Professional Services with <span className="text-[#10353B]">Consulting Approach</span> - Delivering comprehensive AI solutions and applications through strategic consulting
             </p>
           </div>
         </AnimatedSection>
