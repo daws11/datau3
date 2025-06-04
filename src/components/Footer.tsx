@@ -1,4 +1,3 @@
-
 import { Database, Brain, BarChart3, Shield, Cloud, Cog } from "lucide-react";
 
 const Footer = () => {
@@ -25,7 +24,8 @@ const Footer = () => {
     "Financial Services",
     "Aviation",
     "Automotive",
-    "Insurance"
+    "Insurance",
+    "Real Estate"
   ];
 
   return (

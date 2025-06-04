@@ -1,5 +1,5 @@
 
-import { Building, ShoppingCart, CreditCard, Plane, Car, Shield } from "lucide-react";
+import { Building, ShoppingCart, CreditCard, Plane, Car, Shield, Home } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 
 const Solutions = () => {
@@ -33,6 +33,11 @@ const Solutions = () => {
       icon: Shield,
       title: "Insurance",
       description: "Claims processing automation, risk assessment, and customer service enhancement"
+    },
+    {
+      icon: Home,
+      title: "Real Estate",
+      description: "Property valuation, market analysis, and investment optimization solutions"
     }
   ];
 
