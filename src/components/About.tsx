@@ -36,7 +36,7 @@ const About = () => {
               About us
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              Professional Services with <span className="text-[#10353B]">Consulting Approach</span> - Delivering comprehensive AI solutions and applications through strategic consulting
+              Delivering Professional services & comprehensive Data solutions and AI applications through strategic & consulting approach
             </p>
           </div>
         </AnimatedSection>
