@@ -1,4 +1,5 @@
-import { Building, Cog, BarChart3, Lightbulb, Headphones, Settings, Search, Database, BookOpen, FolderOpen, Tag, FileText, TrendingUp, Users, Target, Zap, Monitor, CheckCircle, PieChart, Network, Brain, Code, Focus, PaperMoney } from "lucide-react";
+
+import { Building, Cog, BarChart3, Lightbulb, Headphones, Settings, Search, Database, BookOpen, FolderOpen, Tag, FileText, TrendingUp, Users, Target, Zap, Monitor, CheckCircle, PieChart, Network, Brain, Code, Focus, DollarSign } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 
 const Services = () => {
@@ -37,7 +38,7 @@ const Services = () => {
 
   const domainConsultingServices = [
     {
-      icon: Check,
+      icon: CheckCircle,
       title: "Data Governance",
       description: "Establishing comprehensive data governance frameworks and policies"
     },
@@ -47,7 +48,7 @@ const Services = () => {
       description: "Strategic planning and roadmap development for data initiatives"
     },
     {
-      icon: PaperMoney,
+      icon: DollarSign,
       title: "Data Monetization",
       description: "Unlocking business value and revenue opportunities from data assets"
     },
