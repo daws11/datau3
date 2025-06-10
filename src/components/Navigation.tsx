@@ -3,10 +3,29 @@ import { Menu, X, Home, Briefcase, Building, Target, User, Phone } from "lucide-
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "react-router-dom";
 import { FloatingNav } from "@/components/ui/floating-navbar";
+import { useScroll, useMotionValueEvent } from "motion/react";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isFloatingVisible, setIsFloatingVisible] = useState(false);
   const location = useLocation();
+  const { scrollYProgress } = useScroll();
+
+  // Track scroll to hide/show main navbar when floating navbar is visible
+  useMotionValueEvent(scrollYProgress, "change", (current) => {
+    if (typeof current === "number") {
+      if (scrollYProgress.get() < 0.05) {
+        setIsFloatingVisible(false);
+      } else {
+        let direction = current! - scrollYProgress.getPrevious()!;
+        if (direction < 0) {
+          setIsFloatingVisible(true);
+        } else {
+          setIsFloatingVisible(false);
+        }
+      }
+    }
+  });
 
   const navItems = [
     { name: "Home", href: "/", icon: <Home className="h-4 w-4" /> },
@@ -26,7 +45,6 @@ const Navigation = () => {
   const handleNavClick = (href: string) => {
     setIsMenuOpen(false);
     if (href.startsWith("/#") && location.pathname === "/") {
-      // Smooth scroll to section on same page
       const element = document.querySelector(href.substring(1));
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
@@ -39,8 +57,8 @@ const Navigation = () => {
       {/* Floating Navigation */}
       <FloatingNav navItems={floatingNavItems} />
 
-      {/* Original Fixed Navigation */}
-      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-40">
+      {/* Original Fixed Navigation - Hidden when floating nav is visible */}
+      <nav className={`fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-40 transition-opacity duration-300 ${isFloatingVisible ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex-shrink-0">
