@@ -1,7 +1,7 @@
+
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
-import { GridBackground } from "@/components/ui/grid-background";
 import FadeInUpAnimation from "@/components/FadeInUpAnimation";
 import CountUpAnimation from "@/components/CountUpAnimation";
 
@@ -14,7 +14,7 @@ const Hero = () => {
 
   return (
     <section id="home" className="pt-16 relative overflow-hidden min-h-screen flex items-center">
-      <GridBackground className="bg-gradient-to-br from-gray-50 via-white to-gray-100 h-auto min-h-screen">
+      <HeroHighlight containerClassName="bg-gradient-to-br from-gray-50 via-white to-gray-100 h-auto min-h-screen">
         <div className="absolute top-10 sm:top-20 right-5 sm:right-10 w-48 h-48 sm:w-72 sm:h-72 bg-[#10353B]/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-10 sm:bottom-20 left-5 sm:left-10 w-64 h-64 sm:w-96 sm:h-96 bg-blue-500/5 rounded-full blur-3xl"></div>
         
@@ -78,7 +78,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </GridBackground>
+      </HeroHighlight>
     </section>
   );
 };
